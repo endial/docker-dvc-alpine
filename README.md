@@ -9,13 +9,13 @@ A simple Docker Image used for Data Container, based on endial/base-alpine.
 * No Host Directories
 
 ```
-~$ docker run --name dvc -d -it endial/dvc-alpine
+~$ docker run --rm --name dvc -d -it endial/dvc-alpine
 ```
 
 * With Host Directories
 
 ```
-~$ docker run --name dvc -v /some/content:/srv/www -d -it endial/dvc-alpine
+~$ docker run --rm --name dvc -v /some/content:/srv/www -d -it endial/dvc-alpine
 ```
 
 
