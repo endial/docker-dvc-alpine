@@ -29,3 +29,4 @@ Volume list:
 * /srv/cert
 * /srv/data
 * /srv/www
+* /srv/conf
