@@ -1,18 +1,24 @@
 # dvc-alpine
 
-A simple Docker Image used for Data Container, based on endial/base-alpine.
+简单的用于 Docker 的数据卷镜像，基于 Alpine 系统。
 
 
 
-## How to use
+## 依赖镜像
 
-* No Host Directories
+endial/base-alpine.
+
+
+
+## 如何使用
+
+* 不定义主机目录，使用虚拟卷
 
 ```
 ~$ docker run --rm --name dvc -d -it endial/dvc-alpine
 ```
 
-* With Host Directories
+* 使用主机目录
 
 ```
 ~$ docker run --rm --name dvc -v /some/content:/srv/www -d -it endial/dvc-alpine
@@ -20,9 +26,9 @@ A simple Docker Image used for Data Container, based on endial/base-alpine.
 
 
 
-## Image Volumes
+## 数据卷信息
 
-Volume list:
+镜像定义的数据卷列表:
 
 * /var/log
 * /var/run
