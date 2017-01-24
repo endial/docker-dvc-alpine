@@ -1,12 +1,13 @@
-# dvc-alpine
+# DVC Alpine
 
 简单的用于 Docker 的数据卷镜像，基于 Alpine 系统。
 
 
 
-## 依赖镜像
+## 基本信息
 
-endial/base-alpine.
+* 镜像地址：endial/dvc-alpine
+* 依赖镜像：endial/base-alpine.
 
 
 
