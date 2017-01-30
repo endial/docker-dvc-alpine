@@ -31,6 +31,8 @@
 
 镜像定义的数据卷列表:
 
+* /etc/letsencrypt 
+* /var/lib/letsencrypt
 * /var/log
 * /var/run
 * /srv/cert
