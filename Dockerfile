@@ -2,8 +2,10 @@ FROM endial/base-alpine
 
 MAINTAINER Endial Fang ( endial@126.com )
 
+COPY entrypoint.sh /
+
 VOLUME ["/srv/www", "/srv/cert", "/srv/data", "/srv/conf", "/var/log", "/var/run", "/etc/letsencrypt", "/var/lib/letsencrypt" ]
 
-ENTRYPOINT ["/bin/sh", "-c"]
+ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["while true; do sleep 1; done"]
+CMD []
