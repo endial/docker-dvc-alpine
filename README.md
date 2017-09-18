@@ -16,14 +16,16 @@
 * 不定义主机目录，使用虚拟卷
 
 ```
-~$ docker run --rm --name dvc -d -it endial/dvc-alpine
+~$ docker run --name dvc -d endial/dvc-alpine
 ```
 
 * 使用主机目录
 
 ```
-~$ docker run --rm --name dvc -v /some/content:/srv/www -d -it endial/dvc-alpine
+~$ docker run --name dvc -v /some/content:/srv/www -d endial/dvc-alpine
 ```
+
+注意：该容器执行后会直接退出，但其他容器已经可以挂载相应的容器卷。使用方式在命令行中增加容器卷说明参数：`--volumes-from dvc`，其中`dvc`为执行容器时声明的实例名称。
 
 
 
