@@ -25,19 +25,17 @@
 ~$ docker run --name dvc -v /some/content:/srv/www -d endial/dvc-alpine
 ```
 
-注意：该容器执行后会直接退出，但其他容器已经可以挂载相应的容器卷。使用方式在命令行中增加容器卷说明参数：`--volumes-from dvc`，其中`dvc`为执行容器时声明的实例名称。
+注意：该容器执行后会直接退出，但其他容器已经可以挂载相应的容器卷。使用方式为：在需要使用数据卷的容器启动命令行中增加容器卷说明参数：`--volumes-from dvc`，其中`dvc`为执行容器时声明的实例名称。
 
 
 
 ## 数据卷信息
 
-镜像定义的数据卷列表:
+当前镜像定义的数据卷列表:
 
-* /etc/letsencrypt 
-* /var/lib/letsencrypt
-* /var/log
-* /var/run
-* /srv/cert
-* /srv/data
-* /srv/www
-* /srv/conf
+* /etc/letsencrypt: Certbot使用
+* /var/log: 用于存放应用Log
+* /srv/cert: 用于存放证书文件
+* /srv/data: 用于存放数据文件，如：数据库对应的数据文件、LDAP对应的数据文件等
+* /srv/www: 用于存放网站站点页面文件
+* /srv/conf: 用于存放各应用的配置文件

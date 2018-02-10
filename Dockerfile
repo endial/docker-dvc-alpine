@@ -4,7 +4,7 @@ MAINTAINER Endial Fang ( endial@126.com )
 
 COPY entrypoint.sh /
 
-VOLUME ["/srv/www", "/srv/cert", "/srv/data", "/srv/conf", "/var/log", "/var/run", "/etc/letsencrypt", "/var/lib/letsencrypt" ]
+VOLUME ["/srv/www", "/srv/cert", "/srv/data", "/srv/conf", "/var/log", "/etc/letsencrypt" ]
 
 ENTRYPOINT ["/entrypoint.sh"]
 
