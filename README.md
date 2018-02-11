@@ -35,6 +35,7 @@
 
 * /etc/letsencrypt: Certbot使用
 * /var/log: 用于存放应用Log
+* /var/run: 用于进程ID文件及通讯socket文件存放
 * /srv/cert: 用于存放证书文件
 * /srv/data: 用于存放数据文件，如：数据库对应的数据文件、LDAP对应的数据文件等
 * /srv/www: 用于存放网站站点页面文件
