@@ -1,4 +1,4 @@
-FROM endial/base-alpine
+FROM endial/base-alpine:v3.11
 
 MAINTAINER Endial Fang ( endial@126.com )
 
